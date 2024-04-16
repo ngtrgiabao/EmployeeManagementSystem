@@ -1,0 +1,55 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ClientLibrary/1.0.0": {
+        "dependencies": {
+          "NSwag.ApiDescription.Client": "14.0.7"
+        },
+        "runtime": {
+          "ClientLibrary.dll": {}
+        }
+      },
+      "Microsoft.Extensions.ApiDescription.Client/6.0.3": {},
+      "NSwag.ApiDescription.Client/14.0.7": {
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Client": "6.0.3",
+          "NSwag.MSBuild": "14.0.7"
+        }
+      },
+      "NSwag.MSBuild/14.0.7": {}
+    }
+  },
+  "libraries": {
+    "ClientLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.ApiDescription.Client/6.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sYfFpbRgYDeqku+sXDYdAg/b8jMllnCRmDf5ntzDoJbjFHDlx4WWRDZZhzoUcZKMvH+IQLDpc5BflO4MxrA56A==",
+      "path": "microsoft.extensions.apidescription.client/6.0.3",
+      "hashPath": "microsoft.extensions.apidescription.client.6.0.3.nupkg.sha512"
+    },
+    "NSwag.ApiDescription.Client/14.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qZhJYQpWvtYw+zPcyOa3nK/dfC0Gg3oanB57OvhH6osgsGggZp5sZJt7ecDcGvXieNW0pHnWuN57reEgpIBlHw==",
+      "path": "nswag.apidescription.client/14.0.7",
+      "hashPath": "nswag.apidescription.client.14.0.7.nupkg.sha512"
+    },
+    "NSwag.MSBuild/14.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KsMOTIaU9g7BY0WYIcfeqX599Jc5is8RnOfVxspl/pSiZ0eYo4DTnIu/bcg8m1W05TlykERZNYLU8OFW3/Q7Jg==",
+      "path": "nswag.msbuild/14.0.7",
+      "hashPath": "nswag.msbuild.14.0.7.nupkg.sha512"
+    }
+  }
+}

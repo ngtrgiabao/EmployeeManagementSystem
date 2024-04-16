@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "q4gr9groVFyS/CgbGRtcsMGy4zmk/mhdqUgKWlG7mRyc6YtewHah+FLAQ7SWluMW4pSFeeertfTC1cMEive8mg==",
+  "success": true,
+  "projectFilePath": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\ClientLibrary\\ClientLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ngtrg\\.nuget\\packages\\microsoft.extensions.apidescription.client\\6.0.3\\microsoft.extensions.apidescription.client.6.0.3.nupkg.sha512",
+    "C:\\Users\\ngtrg\\.nuget\\packages\\nswag.apidescription.client\\14.0.7\\nswag.apidescription.client.14.0.7.nupkg.sha512",
+    "C:\\Users\\ngtrg\\.nuget\\packages\\nswag.msbuild\\14.0.7\\nswag.msbuild.14.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

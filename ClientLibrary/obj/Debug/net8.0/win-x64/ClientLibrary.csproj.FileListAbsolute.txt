@@ -1,0 +1,12 @@
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ClientLibrary\bin\Debug\net8.0\win-x64\ClientLibrary.deps.json
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ClientLibrary\bin\Debug\net8.0\win-x64\ClientLibrary.dll
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ClientLibrary\bin\Debug\net8.0\win-x64\ClientLibrary.pdb
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ClientLibrary\obj\Debug\net8.0\win-x64\ClientLibrary.csproj.AssemblyReference.cache
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ClientLibrary\obj\Debug\net8.0\win-x64\ClientLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ClientLibrary\obj\Debug\net8.0\win-x64\ClientLibrary.AssemblyInfoInputs.cache
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ClientLibrary\obj\Debug\net8.0\win-x64\ClientLibrary.AssemblyInfo.cs
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ClientLibrary\obj\Debug\net8.0\win-x64\ClientLibrary.csproj.CoreCompileInputs.cache
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ClientLibrary\obj\Debug\net8.0\win-x64\ClientLibrary.dll
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ClientLibrary\obj\Debug\net8.0\win-x64\refint\ClientLibrary.dll
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ClientLibrary\obj\Debug\net8.0\win-x64\ClientLibrary.pdb
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ClientLibrary\obj\Debug\net8.0\win-x64\ref\ClientLibrary.dll

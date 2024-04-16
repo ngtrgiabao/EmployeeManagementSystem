@@ -1,0 +1,216 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\Client\\Client.csproj": {}
+  },
+  "projects": {
+    "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\BaseLibrary\\BaseLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\BaseLibrary\\BaseLibrary.csproj",
+        "projectName": "BaseLibrary",
+        "projectPath": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\BaseLibrary\\BaseLibrary.csproj",
+        "packagesPath": "C:\\Users\\ngtrg\\.nuget\\packages\\",
+        "outputPath": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\BaseLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ngtrg\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\ClientLibrary\\ClientLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\ClientLibrary\\ClientLibrary.csproj",
+        "projectName": "ClientLibrary",
+        "projectPath": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\ClientLibrary\\ClientLibrary.csproj",
+        "packagesPath": "C:\\Users\\ngtrg\\.nuget\\packages\\",
+        "outputPath": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\ClientLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ngtrg\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "NSwag.ApiDescription.Client": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[14.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\Client\\Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\Client\\Client.csproj",
+        "projectName": "Client",
+        "projectPath": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\Client\\Client.csproj",
+        "packagesPath": "C:\\Users\\ngtrg\\.nuget\\packages\\",
+        "outputPath": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ngtrg\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\BaseLibrary\\BaseLibrary.csproj": {
+                "projectPath": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\BaseLibrary\\BaseLibrary.csproj"
+              },
+              "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\ClientLibrary\\ClientLibrary.csproj": {
+                "projectPath": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\ClientLibrary\\ClientLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.Sdk.WebAssembly.Pack": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
