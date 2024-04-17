@@ -1052,3 +1052,4 @@ D:\VSCODE-PROJECT\EmployeeManagementSystem\Client\bin\Debug\net8.0\wwwroot\_fram
 D:\VSCODE-PROJECT\EmployeeManagementSystem\Client\bin\Debug\net8.0\AutoMapper.dll
 D:\VSCODE-PROJECT\EmployeeManagementSystem\Client\obj\Debug\net8.0\webcil\AutoMapper.wasm
 D:\VSCODE-PROJECT\EmployeeManagementSystem\Client\obj\Debug\net8.0\compressed\a8e06r6qpp.gz
+D:\VSCODE-PROJECT\EmployeeManagementSystem\Client\obj\Debug\net8.0\Client.sourcelink.json

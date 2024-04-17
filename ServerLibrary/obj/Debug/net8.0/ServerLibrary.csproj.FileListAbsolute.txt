@@ -15,3 +15,4 @@ D:\VSCODE-PROJECT\EmployeeManagementSystem\ServerLibrary\bin\Debug\net8.0\BaseLi
 D:\VSCODE-PROJECT\EmployeeManagementSystem\ServerLibrary\obj\Debug\net8.0\ServerLibrary.csproj.AssemblyReference.cache
 D:\VSCODE-PROJECT\EmployeeManagementSystem\ServerLibrary\obj\Debug\net8.0\ServerLi.AF94C59E.Up2Date
 D:\VSCODE-PROJECT\EmployeeManagementSystem\ServerLibrary\obj\Debug\net8.0\ServerLibrary.genruntimeconfig.cache
+D:\VSCODE-PROJECT\EmployeeManagementSystem\ServerLibrary\obj\Debug\net8.0\ServerLibrary.sourcelink.json
