@@ -17,6 +17,18 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(corsPolicyBuilder =>
+        corsPolicyBuilder.SetIsOriginAllowed(_ => true)
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials());
+}); 
+builder.Services.AddSwaggerGen(c =>
+{
+    c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+});
 builder.Services.Configure<JwtSection>(builder.Configuration.GetSection("JwtSection"));
 builder.Services.AddScoped<IUserAccount, UserAccountRepository>();
 var app = builder.Build();
@@ -31,7 +43,12 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
-
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    // https://localhost:44342/swagger/index.html
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Employee Management System API V1");
+});
 app.MapControllers();
 
 app.Run();

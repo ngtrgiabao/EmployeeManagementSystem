@@ -4,15 +4,22 @@ using ServerLibrary.Repositories.Contacts;
 
 namespace Server.Controllers;
 
-[Route("api/[controller]")]
 [ApiController]
-public class AuthenticationController(IUserAccount accountInterface) : ControllerBase
+[Route("api/[controller]")]
+public class AuthenticationController : ControllerBase
 {
-   [HttpPost("register")]
-   public async Task<IActionResult> CreateAsync (Register user)
-   {
-      if (user == null) return BadRequest("Model is empty");
-      var result = await accountInterface.CreateAsync(user);
-      return Ok(result);
-   }
+    private readonly IUserAccount _accountInterface;
+    
+    public AuthenticationController(IUserAccount accountInterface)
+    {
+        _accountInterface = accountInterface;
+    }
+  
+    [HttpPost("register")]
+    public async Task<IActionResult> CreateAsync([FromBody] Register user)
+    {
+        if (user == null) return BadRequest("Model is empty");
+        var result = await _accountInterface.CreateAsync(user);
+        return Ok(result);
+    }
 }
