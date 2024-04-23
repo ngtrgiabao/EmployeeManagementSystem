@@ -81,14 +81,29 @@ public class UserAccountRepository(IOptions<JwtSection> config, AppDbContext app
         if (!BCrypt.Net.BCrypt.Verify(user.Password, applicationUser.Password))
             return new LoginResponse(false, "Email or password not valid");
 
-        var getUserRole = await appDbContext.UserRoles.FirstOrDefaultAsync(_ => _.UserId == applicationUser.Id);
+        var getUserRole = await FindUserRole(applicationUser.Id);
         if (getUserRole is null) return new LoginResponse(false, "user role not found");
 
-        var getRoleName = await appDbContext.SystemRoles.FirstOrDefaultAsync(_ => _.Id == getUserRole.RoleId);
+        var getRoleName = await FindRoleName(getUserRole.RoleId);
         if (getRoleName is null) return new LoginResponse(false, "user role not found");
 
         string jwtToken = GenerateToken(applicationUser, getRoleName!.Name!);
         string refreshToken = GenerateRefreshToken();
+
+        var findUser = await appDbContext.RefreshTokenInfos.FirstOrDefaultAsync(_ => _.UserId == applicationUser.Id);
+        if (findUser is not null)
+        {
+            findUser!.Token = refreshToken;
+            await appDbContext.SaveChangesAsync();
+        }
+        else
+        {
+            await AddToDatabase(new RefreshTokenInfo()
+            {
+                Token = refreshToken,
+                UserId = applicationUser.Id
+            });
+        }
         return new LoginResponse(true, "Login successfully", jwtToken, refreshToken);
     }
 
@@ -113,6 +128,10 @@ public class UserAccountRepository(IOptions<JwtSection> config, AppDbContext app
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
 
+    private async Task<UserRole> FindUserRole(int userId) =>
+        await appDbContext.UserRoles.FirstOrDefaultAsync(_ => _.UserId == userId);
+    private async Task<SystemRole> FindRoleName(int roleId) =>
+        await appDbContext.SystemRoles.FirstOrDefaultAsync(_ => _.Id == roleId);
     private static string GenerateRefreshToken() => Convert.ToBase64String(RandomNumberGenerator.GetBytes(64));
     
     private async Task<ApplicationUser> FindUserByEmail(string email)
@@ -125,5 +144,28 @@ public class UserAccountRepository(IOptions<JwtSection> config, AppDbContext app
         var result = appDbContext.Add(model!);
         await appDbContext.SaveChangesAsync();
         return (T)result.Entity;
+    }
+
+    public async Task<LoginResponse> RefreshTokenAsync(RefreshToken token)
+    {
+        if (token is null) return new LoginResponse(false, "Model is empty");
+
+        var findToken = await appDbContext.RefreshTokenInfos.FirstOrDefaultAsync(_ => _.Token!.Equals(token.Token));
+        if(findToken is null) return new LoginResponse(false, "Refresh token is required");
+
+        var user = await appDbContext.ApplicationUsers.FirstOrDefaultAsync(_ => _.Id == findToken.UserId);
+        if(user is null) return new LoginResponse(false, "Refresh token can not be generated because user not found");
+
+        var userRole = await FindUserRole(user.Id);
+        var roleName = await FindRoleName(userRole.RoleId);
+        string jwtToken = GenerateToken(user, roleName.Name!);
+        string refreshToken = GenerateRefreshToken();
+
+        var updateRefreshToken = await appDbContext.RefreshTokenInfos.FirstOrDefaultAsync(_ => _.UserId == user.Id);
+        if(updateRefreshToken is null) return new LoginResponse(false, "Refresh token can not be generated because user has not signed in");
+
+        updateRefreshToken.Token = refreshToken;
+        await appDbContext.SaveChangesAsync();
+        return new LoginResponse(true, "Token refreshed successfully", jwtToken, refreshToken);
     }
 }

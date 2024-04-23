@@ -7,14 +7,17 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Blazored.LocalStorage" Version="4.4.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
       <PackageReference Include="NSwag.ApiDescription.Client" Version="14.0.7">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Services\Contacts\" />
-      <Folder Include="Services\Implementations\" />
+      <ProjectReference Include="..\BaseLibrary\BaseLibrary.csproj" />
     </ItemGroup>
 </Project>

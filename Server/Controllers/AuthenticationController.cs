@@ -30,4 +30,12 @@ public class AuthenticationController : ControllerBase
         var result = await _accountInterface.LoginAsync(user);
         return Ok(result);
     }
+
+    [HttpPost("refresh-token")]
+    public async Task<IActionResult> RefreshTokenAsync(RefreshToken token)
+    {
+        if (token == null) return BadRequest("Model is empty");
+        var result = await _accountInterface.RefreshTokenAsync(token);
+        return Ok(result);
+    }
 }
