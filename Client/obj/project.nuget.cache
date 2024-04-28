@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xaQ9QQtytRQp3Tqf3XqYVAEXfq1pXRopmJSa5008vwOahZQ9xgQQo6oL1SyzlVTIe4uD//nTZ9yMp0DnrXMTJQ==",
+  "dgSpecHash": "14hMZvsmp84fCsks+yJNldEslOV0fnKFskn4+z9zz5ZEs/HcBWIKRNw72u57DbDsEQLCDqr/KB/D20FV0azY0A==",
   "success": true,
   "projectFilePath": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\Client\\Client.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,11 @@
     "C:\\Users\\ngtrg\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.4\\microsoft.jsinterop.webassembly.8.0.4.nupkg.sha512",
     "C:\\Users\\ngtrg\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.4\\microsoft.net.illink.tasks.8.0.4.nupkg.sha512",
     "C:\\Users\\ngtrg\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.4\\microsoft.net.sdk.webassembly.pack.8.0.4.nupkg.sha512",
+    "C:\\Users\\ngtrg\\.nuget\\packages\\syncfusion.blazor.buttons\\23.1.36\\syncfusion.blazor.buttons.23.1.36.nupkg.sha512",
+    "C:\\Users\\ngtrg\\.nuget\\packages\\syncfusion.blazor.core\\23.1.36\\syncfusion.blazor.core.23.1.36.nupkg.sha512",
+    "C:\\Users\\ngtrg\\.nuget\\packages\\syncfusion.blazor.popups\\23.1.36\\syncfusion.blazor.popups.23.1.36.nupkg.sha512",
+    "C:\\Users\\ngtrg\\.nuget\\packages\\syncfusion.blazor.themes\\24.1.43\\syncfusion.blazor.themes.24.1.43.nupkg.sha512",
+    "C:\\Users\\ngtrg\\.nuget\\packages\\syncfusion.licensing\\23.1.36\\syncfusion.licensing.23.1.36.nupkg.sha512",
     "C:\\Users\\ngtrg\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "C:\\Users\\ngtrg\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.0.3\\system.identitymodel.tokens.jwt.7.0.3.nupkg.sha512",
     "C:\\Users\\ngtrg\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",

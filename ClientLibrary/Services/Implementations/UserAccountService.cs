@@ -28,8 +28,12 @@ public class UserAccountService(GetHttpClient getHttpClient) : IUserAccountServi
         return await result.Content.ReadFromJsonAsync<LoginResponse>()!;
     }
 
-    public Task<LoginResponse> RefreshToken(RefreshToken token)
+    public async Task<LoginResponse> RefreshToken(RefreshToken token)
     {
-        throw new NotImplementedException();
+        var httpClient = getHttpClient.GetPublishHttpClient();
+        var result = await httpClient.PostAsJsonAsync($"{AuthUrl}/refresh-token", token);
+        if (!result.IsSuccessStatusCode) return new LoginResponse(false, " Error Occured ");
+
+        return await result.Content.ReadFromJsonAsync<LoginResponse>()!;
     }
 }

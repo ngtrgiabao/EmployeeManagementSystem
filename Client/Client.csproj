@@ -12,11 +12,23 @@
         <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0"/>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.4"/>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.4" PrivateAssets="all"/>
+        <PackageReference Include="Syncfusion.Blazor.Buttons" Version="23.1.36" />
+        <PackageReference Include="Syncfusion.Blazor.Popups" Version="23.1.36" />
+        <PackageReference Include="Syncfusion.Blazor.Themes" Version="24.1.43" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\BaseLibrary\BaseLibrary.csproj" />
       <ProjectReference Include="..\ClientLibrary\ClientLibrary.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\images\background\" />
+      <Folder Include="wwwroot\images\profiles\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\Shared\_ButtonLoadingSpinner.cshtml" />
     </ItemGroup>
 
 </Project>

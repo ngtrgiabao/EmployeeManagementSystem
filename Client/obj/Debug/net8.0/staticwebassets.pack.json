@@ -33,6 +33,18 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\Client\\wwwroot\\images\\background\\bg.png",
+      "PackagePath": "staticwebassets\\images\\background\\bg.png"
+    },
+    {
+      "Id": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\Client\\wwwroot\\images\\companylogos\\fdev.jpg",
+      "PackagePath": "staticwebassets\\images\\companylogos\\fdev.jpg"
+    },
+    {
+      "Id": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\Client\\wwwroot\\images\\profiles\\avatar.png",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar.png"
+    },
+    {
       "Id": "D:\\VSCODE-PROJECT\\EmployeeManagementSystem\\Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

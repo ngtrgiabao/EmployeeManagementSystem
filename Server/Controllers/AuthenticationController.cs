@@ -1,4 +1,5 @@
 using BaseLibrary.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ServerLibrary.Repositories.Contacts;
 
@@ -6,6 +7,7 @@ namespace Server.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[AllowAnonymous]
 public class AuthenticationController : ControllerBase
 {
     private readonly IUserAccount _accountInterface;
